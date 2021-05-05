@@ -1,0 +1,47 @@
+.nav {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-area: n;
+    margin-right: 10px;
+    background-color: rgb(99, 211, 99);
+}
+
+.item a {
+    margin-left: 45px;
+    color: #fff;
+    font-size: 21px;
+    text-decoration: none;
+    transition: color .1s linear;
+}
+
+
+a:hover{
+    color: rgb(0, 102, 255);
+}
+
+a.active {
+    color: rgb(0, 102, 255);
+}
+
+.item:nth-child(7){
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.submitt{ 
+    border:none; 
+    cursor: pointer;
+    margin-left: 39px;
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    transition: color .1s linear;
+    background-color:transparent; 
+    }
+
+.submitt:focus{
+    outline: none;
+}
+
+.submitt:hover{
+    color: rgb(0, 0, 0);
+}

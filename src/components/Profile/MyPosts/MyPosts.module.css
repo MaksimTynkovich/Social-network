@@ -1,0 +1,15 @@
+.text{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.btn{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.div{
+    margin-left: 10px;
+}
