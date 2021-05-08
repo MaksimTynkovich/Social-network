@@ -1,5 +1,6 @@
 const ADD_POST = 'ADD-POST';
 const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+const UPDATE_NEW_MESSAGE_BODY = 'UPDATE_NEW_MESSAGE_BODY'
 
 let store = {
     _state: {
@@ -28,8 +29,10 @@ let store = {
                 { id: 4, message: 'Give me money' },
                 { id: 5, message: 'Ok, I buy your account' },
                 { id: 6, message: 'Bye!' }
-            ]
-        }
+            ],
+            newMessageBody: ''
+        },
+        sidebar: {}
     },
     _callSubscriber() {
         console.log('State changed!');
@@ -54,7 +57,10 @@ let store = {
         } else if (action.type === UPDATE_NEW_POST_TEXT){
             this._state.profilePage.newPostText = action.newText;
             this._callSubscriber(this._state);
-        }
+        } else if (action.type === UPDATE_NEW_MESSAGE_BODY) {
+        this._state.dialogsPage.newMessageBody = action.body;
+        this._callSubscriber(this._state);
+    }
     }
 }
 
