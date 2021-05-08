@@ -70,16 +70,15 @@ let store = {
     }
 }
 
-export const addPostActionCreator = () => {
-    return{
-      type: 'ADD-POST'
-    }
-  }
-  
-export const updateNewPostTextActionCreator = (text) => {
-    return {type: 'UPDATE-NEW-POST-TEXT', newText: text }
-  }
-  
+export const addPostActionCreator = () => ({type: 'ADD-POST'})
+export const updateNewPostTextActionCreator = (text) => 
+    ({type: 'UPDATE-NEW-POST-TEXT', newText: text })
+   
+export const sendMessageCreator = () => ({type: 'SEND_MESSAGE'})
+export const updateNewMessageBodyCreator = (text) => 
+    ({type: 'UPDATE-NEW-POST-TEXT', body: body })
+      
+
 
 export default store;
 window.store = store;
